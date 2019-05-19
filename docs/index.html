@@ -104,7 +104,7 @@
 
 		hostname = 'paho8181.cloudapp.net';
 		//hostname = 'localhost';
-		port = 1883;
+		port = 8883;
 		client = new Paho.Client(hostname, port, "packet-display");
 
 		var broker1 = create_broker("broker:"+hostname);
@@ -135,7 +135,7 @@
     		timeout: 30,
     		keepAliveInterval: 30,
     		cleanSession: false,
-    		useSSL: false,
+    		useSSL: true,
     		reconnect: true
     		//onSuccess: null,
     		//onFailure: null
